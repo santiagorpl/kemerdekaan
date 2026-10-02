@@ -1,0 +1,3277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perjalanan Indonesia Menuju Kemerdekaan</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f1ea;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: linear-gradient(135deg, #9b1c1c, #d62828);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 8px solid #ffffff;
+        }
+
+        header .label {
+            display: inline-block;
+            background: rgba(255,255,255,0.18);
+            padding: 6px 18px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 46px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        /* =========================
+           NAVIGASI
+        ========================= */
+
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7d1717;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d62828;
+        }
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+            width: 92%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            color: #d62828;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #7d1717;
+            margin-top: 5px;
+        }
+
+        .section-title p {
+            max-width: 750px;
+            margin: 10px auto;
+            color: #666;
+        }
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            background: white;
+            margin-top: 40px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 7px solid #d62828;
+        }
+
+        .intro h2 {
+            color: #7d1717;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           STATISTIK
+        ========================= */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-top: 5px solid #d62828;
+        }
+
+        .stat-card .number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #d62828;
+        }
+
+        .stat-card h3 {
+            font-size: 17px;
+            margin-top: 5px;
+        }
+
+        .stat-card p {
+            color: #777;
+            font-size: 13px;
+        }
+
+        /* =========================
+           ALUR BESAR
+        ========================= */
+
+        .journey {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .journey-box {
+            background: white;
+            padding: 20px 10px;
+            text-align: center;
+            border-radius: 14px;
+            border-bottom: 5px solid #d62828;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+            position: relative;
+        }
+
+        .journey-box .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .journey-box h3 {
+            color: #7d1717;
+            font-size: 16px;
+        }
+
+        .journey-box p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* =========================
+           INFOGRAFIS BAGIAN
+        ========================= */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 3px 13px rgba(0,0,0,0.08);
+        }
+
+        .info-card h3 {
+            color: #8b1e1e;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .info-card h4 {
+            margin-top: 18px;
+            margin-bottom: 7px;
+            color: #444;
+        }
+
+        .info-card ul {
+            padding-left: 22px;
+        }
+
+        .info-card li {
+            margin-bottom: 7px;
+        }
+
+        /* =========================
+           JEPANG
+        ========================= */
+
+        .jepang-banner {
+            background: linear-gradient(135deg, #fff, #f8eaea);
+            padding: 30px;
+            border-radius: 18px;
+            border: 2px solid #e6bcbc;
+            margin-bottom: 25px;
+        }
+
+        .jepang-banner h3 {
+            color: #9b1c1c;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        /* =========================
+           KEBIJAKAN
+        ========================= */
+
+        .policy-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .policy {
+            background: white;
+            padding: 23px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .policy .num {
+            background: #d62828;
+            color: white;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .policy h3 {
+            color: #7d1717;
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           ORGANISASI
+        ========================= */
+
+        .organization-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .organization {
+            background: white;
+            padding: 23px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #d62828;
+        }
+
+        .organization h3 {
+            color: #8b1e1e;
+            margin-bottom: 8px;
+        }
+
+        .organization .year {
+            font-size: 13px;
+            color: #d62828;
+            font-weight: bold;
+        }
+
+        /* =========================
+           DAMPAK
+        ========================= */
+
+        .impact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .impact-card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .impact-card.negative {
+            border-top: 6px solid #b71c1c;
+        }
+
+        .impact-card.positive {
+            border-top: 6px solid #388e3c;
+        }
+
+        .impact-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .impact-card ul {
+            padding-left: 22px;
+        }
+
+        /* =========================
+           TOKOH
+        ========================= */
+
+        .people-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .person {
+            background: white;
+            padding: 25px 18px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .person .avatar {
+            width: 75px;
+            height: 75px;
+            margin: auto;
+            background: #d62828;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .person h3 {
+            color: #7d1717;
+            margin-bottom: 8px;
+        }
+
+        .person p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* =========================
+           TIMELINE
+        ========================= */
+
+        .timeline {
+            position: relative;
+            margin-top: 35px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #d62828;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 15px 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content .date {
+            color: #d62828;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .timeline-content h3 {
+            color: #7d1717;
+            margin-bottom: 8px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 27px;
+            width: 20px;
+            height: 20px;
+            background: #d62828;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #d62828;
+            z-index: 2;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -10px;
+        }
+
+        /* =========================
+           RENGASDENGKLOK
+        ========================= */
+
+        .highlight {
+            background: #7d1717;
+            color: white;
+            padding: 40px;
+            border-radius: 18px;
+            margin-top: 30px;
+        }
+
+        .highlight h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .highlight-box {
+            background: rgba(255,255,255,0.12);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .highlight-box h3 {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           PROKLAMASI
+        ========================= */
+
+        .proklamasi {
+            background: white;
+            padding: 45px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+            border: 5px solid #d62828;
+        }
+
+        .proklamasi .date {
+            font-size: 42px;
+            font-weight: bold;
+            color: #d62828;
+            margin: 10px 0 20px;
+        }
+
+        .proklamasi p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .quote-box {
+            margin-top: 30px;
+            background: #f8eeee;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .quote-box h3 {
+            color: #7d1717;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           TEKS PROKLAMASI
+        ========================= */
+
+        .document {
+            background: #fffdf5;
+            border: 1px solid #ddd3ad;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+        }
+
+        .document h2 {
+            text-align: center;
+            font-family: Georgia, serif;
+            margin-bottom: 25px;
+        }
+
+        .document .text {
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 2;
+        }
+
+        /* =========================
+           PEMBENTUKAN PEMERINTAHAN
+        ========================= */
+
+        .government-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .government {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #d62828;
+        }
+
+        .government h3 {
+            color: #7d1717;
+            margin-bottom: 10px;
+        }
+
+        .government .date {
+            font-size: 13px;
+            color: #d62828;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           PRESIDEN
+        ========================= */
+
+        .president-box {
+            background: linear-gradient(135deg, #ffffff, #f7eaea);
+            padding: 35px;
+            border-radius: 18px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .leader {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .leader .initial {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #d62828;
+            color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .leader h3 {
+            color: #7d1717;
+        }
+
+        /* =========================
+           KEMENTERIAN
+        ========================= */
+
+        .ministry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .ministry {
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        .ministry strong {
+            color: #7d1717;
+        }
+
+        /* =========================
+           FAKTA
+        ========================= */
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .fact {
+            background: white;
+            padding: 22px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+        }
+
+        .fact span {
+            display: inline-block;
+            background: #d62828;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           KESIMPULAN
+        ========================= */
+
+        .conclusion {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 6px solid #d62828;
+        }
+
+        .conclusion h2 {
+            color: #7d1717;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           IDENTITAS
+        ========================= */
+
+        .identity {
+            margin-top: 45px;
+            background: #222;
+            color: white;
+            padding: 35px;
+            border-radius: 18px;
+        }
+
+        .identity h2 {
+            margin-bottom: 20px;
+        }
+
+        .identity table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .identity td {
+            padding: 8px;
+            border-bottom: 1px solid #444;
+        }
+
+        .identity td:first-child {
+            width: 180px;
+            font-weight: bold;
+            color: #ffcccc;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 60px;
+            background: #151515;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer h3 {
+            color: #ffdddd;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .people-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .policy-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .organization-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .ministry-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .journey {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 31px;
+            }
+
+            nav {
+                position: static;
+                line-height: 2;
+            }
+
+            .stats,
+            .info-grid,
+            .two-column,
+            .policy-list,
+            .organization-grid,
+            .impact,
+            .people-grid,
+            .government-grid,
+            .president-box,
+            .ministry-grid,
+            .facts {
+                grid-template-columns: 1fr;
+            }
+
+            .journey {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                left: 0;
+                padding-left: 40px;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd) {
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 0;
+                right: auto;
+            }
+
+            .proklamasi {
+                padding: 25px;
+            }
+
+            .proklamasi .date {
+                font-size: 30px;
+            }
+
+            .document {
+                padding: 25px;
+            }
+
+            .highlight {
+                padding: 25px;
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .identity td:first-child {
+                width: 120px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header>
+
+        <div class="label">
+            PROYEK ASTS SEJARAH
+        </div>
+
+        <h1>
+            Perjalanan Indonesia<br>
+            Menuju Kemerdekaan
+        </h1>
+
+        <p>
+            Dari Pendudukan Jepang, perjuangan menuju Proklamasi,
+            hingga terbentuknya Pemerintahan Indonesia.
+        </p>
+
+    </header>
+
+
+    <!-- =====================================
+         NAVIGASI
+    ====================================== -->
+
+    <nav>
+
+        <a href="#pendudukan">Pendudukan Jepang</a>
+
+        <a href="#organisasi">Organisasi</a>
+
+        <a href="#proklamasi">Proklamasi</a>
+
+        <a href="#pemerintahan">Pemerintahan</a>
+
+        <a href="#tokoh">Tokoh</a>
+
+        <a href="#kesimpulan">Kesimpulan</a>
+
+    </nav>
+
+
+    <main class="container">
+
+
+        <!-- =====================================
+             INTRO
+        ====================================== -->
+
+        <div class="intro">
+
+            <h2>
+                🇮🇩 Pengantar
+            </h2>
+
+            <p>
+                Kemerdekaan Indonesia merupakan hasil dari perjalanan sejarah
+                yang panjang. Sebelum menjadi negara merdeka, Indonesia mengalami
+                masa pendudukan Jepang, berbagai kebijakan pemerintahan militer,
+                mobilisasi rakyat, serta munculnya organisasi yang melibatkan
+                tokoh dan masyarakat Indonesia.
+            </p>
+
+            <br>
+
+            <p>
+                Ketika Jepang mengalami kekalahan dalam Perang Dunia II,
+                kesempatan bagi bangsa Indonesia untuk menentukan masa depannya
+                semakin terbuka. Para tokoh bangsa kemudian mempersiapkan
+                Proklamasi Kemerdekaan hingga akhirnya Indonesia memproklamasikan
+                kemerdekaannya pada 17 Agustus 1945.
+            </p>
+
+            <br>
+
+            <p>
+                Setelah Proklamasi, Indonesia tidak berhenti pada pernyataan
+                kemerdekaan. Negara yang baru berdiri harus membentuk pemerintahan,
+                menetapkan dasar konstitusi, memilih pemimpin, membentuk kementerian,
+                serta mengatur wilayah pemerintahan.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             STATISTIK INFOGRAFIS
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Gambaran Singkat</span>
+
+                <h2>Perjalanan Menuju Negara Merdeka</h2>
+
+                <p>
+                    Beberapa angka dan tanggal penting dalam perjalanan
+                    sejarah Indonesia.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="number">
+                        1942
+                    </div>
+
+                    <h3>
+                        Pendudukan Jepang
+                    </h3>
+
+                    <p>
+                        Jepang mulai menduduki wilayah Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="number">
+                        16
+                    </div>
+
+                    <h3>
+                        Agustus 1945
+                    </h3>
+
+                    <p>
+                        Peristiwa Rengasdengklok.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="number">
+                        17
+                    </div>
+
+                    <h3>
+                        Agustus 1945
+                    </h3>
+
+                    <p>
+                        Proklamasi Kemerdekaan Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="number">
+                        18
+                    </div>
+
+                    <h3>
+                        Agustus 1945
+                    </h3>
+
+                    <p>
+                        Pembentukan dasar pemerintahan awal.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ALUR PERJALANAN
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Alur Sejarah</span>
+
+                <h2>Indonesia Menuju Kemerdekaan</h2>
+
+            </div>
+
+
+            <div class="journey">
+
+                <div class="journey-box">
+
+                    <div class="icon">🇯🇵</div>
+
+                    <h3>
+                        Pendudukan Jepang
+                    </h3>
+
+                    <p>
+                        1942–1945
+                    </p>
+
+                </div>
+
+
+                <div class="journey-box">
+
+                    <div class="icon">📢</div>
+
+                    <h3>
+                        Persiapan Kemerdekaan
+                    </h3>
+
+                    <p>
+                        BPUPKI & PPKI
+                    </p>
+
+                </div>
+
+
+                <div class="journey-box">
+
+                    <div class="icon">🚗</div>
+
+                    <h3>
+                        Rengasdengklok
+                    </h3>
+
+                    <p>
+                        16 Agustus 1945
+                    </p>
+
+                </div>
+
+
+                <div class="journey-box">
+
+                    <div class="icon">🇮🇩</div>
+
+                    <h3>
+                        Proklamasi
+                    </h3>
+
+                    <p>
+                        17 Agustus 1945
+                    </p>
+
+                </div>
+
+
+                <div class="journey-box">
+
+                    <div class="icon">🏛️</div>
+
+                    <h3>
+                        Pemerintahan
+                    </h3>
+
+                    <p>
+                        18 Agustus 1945 dan seterusnya
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             A. PENDUDUKAN JEPANG
+        ====================================== -->
+
+        <section id="pendudukan">
+
+            <div class="section-title">
+
+                <span>Bagian A</span>
+
+                <h2>Pendudukan Jepang di Indonesia</h2>
+
+                <p>
+                    Masa pendudukan Jepang berlangsung sejak 1942 sampai 1945.
+                </p>
+
+            </div>
+
+
+            <div class="jepang-banner">
+
+                <h3>
+                    🇯🇵 Kedatangan Jepang
+                </h3>
+
+                <p>
+                    Jepang datang ke wilayah Indonesia pada awal tahun 1942
+                    dalam rangkaian Perang Dunia II. Pasukan Jepang berhasil
+                    mengalahkan kekuatan Belanda di Hindia Belanda.
+                </p>
+
+                <br>
+
+                <p>
+                    Pemerintahan Hindia Belanda menyerah kepada Jepang melalui
+                    Kapitulasi Kalijati pada 8 Maret 1942.
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h3>
+                        Latar Belakang Kedatangan Jepang
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Jepang sedang melakukan ekspansi di Asia dan Pasifik.
+                        </li>
+
+                        <li>
+                            Jepang membutuhkan sumber daya alam untuk mendukung
+                            kepentingan perang.
+                        </li>
+
+                        <li>
+                            Indonesia memiliki sumber daya seperti minyak bumi,
+                            karet, dan bahan tambang.
+                        </li>
+
+                        <li>
+                            Jepang berusaha menggantikan kekuasaan kolonial
+                            Belanda di Asia Tenggara.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>
+                        Sistem Pemerintahan Jepang
+                    </h3>
+
+                    <p>
+                        Pemerintahan Jepang di Indonesia bersifat militer.
+                        Wilayah Indonesia dibagi ke dalam beberapa wilayah
+                        pemerintahan militer.
+                    </p>
+
+                    <h4>
+                        Tiga wilayah utama
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Jawa dan Madura
+                        </li>
+
+                        <li>
+                            Sumatra
+                        </li>
+
+                        <li>
+                            Indonesia bagian timur
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             KEBIJAKAN JEPANG
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Kebijakan</span>
+
+                <h2>Kebijakan Jepang di Indonesia</h2>
+
+            </div>
+
+
+            <div class="policy-list">
+
+                <div class="policy">
+
+                    <div class="num">
+                        1
+                    </div>
+
+                    <h3>
+                        Romusha
+                    </h3>
+
+                    <p>
+                        Rakyat dikerahkan sebagai tenaga kerja untuk berbagai
+                        proyek yang mendukung kepentingan Jepang.
+                    </p>
+
+                </div>
+
+
+                <div class="policy">
+
+                    <div class="num">
+                        2
+                    </div>
+
+                    <h3>
+                        Penguasaan Ekonomi
+                    </h3>
+
+                    <p>
+                        Jepang mengendalikan sumber daya dan kegiatan ekonomi
+                        untuk memenuhi kebutuhan perang.
+                    </p>
+
+                </div>
+
+
+                <div class="policy">
+
+                    <div class="num">
+                        3
+                    </div>
+
+                    <h3>
+                        Wajib Menyerahkan Hasil Pertanian
+                    </h3>
+
+                    <p>
+                        Sebagian hasil pertanian rakyat dikumpulkan untuk
+                        memenuhi kebutuhan pemerintahan dan militer Jepang.
+                    </p>
+
+                </div>
+
+
+                <div class="policy">
+
+                    <div class="num">
+                        4
+                    </div>
+
+                    <h3>
+                        Pemerintahan Militer
+                    </h3>
+
+                    <p>
+                        Pemerintahan dijalankan dengan sistem militer dan
+                        pengawasan yang ketat.
+                    </p>
+
+                </div>
+
+
+                <div class="policy">
+
+                    <div class="num">
+                        5
+                    </div>
+
+                    <h3>
+                        Mobilisasi Rakyat
+                    </h3>
+
+                    <p>
+                        Jepang membentuk organisasi untuk mengerahkan
+                        masyarakat dalam mendukung kepentingan perang.
+                    </p>
+
+                </div>
+
+
+                <div class="policy">
+
+                    <div class="num">
+                        6
+                    </div>
+
+                    <h3>
+                        Propaganda
+                    </h3>
+
+                    <p>
+                        Jepang menggunakan propaganda untuk mendapatkan
+                        dukungan masyarakat Indonesia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             DAMPAK
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Dampak</span>
+
+                <h2>Dampak Pendudukan Jepang</h2>
+
+            </div>
+
+
+            <div class="impact">
+
+                <div class="impact-card negative">
+
+                    <h3>
+                        Dampak bagi Rakyat
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Kehidupan rakyat mengalami kesulitan.
+                        </li>
+
+                        <li>
+                            Terjadi kekurangan pangan dan barang kebutuhan.
+                        </li>
+
+                        <li>
+                            Banyak rakyat dikerahkan sebagai romusha.
+                        </li>
+
+                        <li>
+                            Kebebasan masyarakat dibatasi.
+                        </li>
+
+                        <li>
+                            Terjadi penderitaan akibat perang dan eksploitasi.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="impact-card positive">
+
+                    <h3>
+                        Perkembangan yang Kemudian Dimanfaatkan
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Penggunaan bahasa Indonesia semakin luas dalam
+                            berbagai kegiatan.
+                        </li>
+
+                        <li>
+                            Sebagian tokoh Indonesia memperoleh pengalaman
+                            dalam organisasi dan pemerintahan.
+                        </li>
+
+                        <li>
+                            Organisasi militer seperti PETA memberikan
+                            pengalaman kepada sebagian pemuda Indonesia.
+                        </li>
+
+                        <li>
+                            Muncul kesempatan bagi tokoh Indonesia untuk
+                            mempersiapkan kemerdekaan.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ORGANISASI JEPANG
+        ====================================== -->
+
+        <section id="organisasi">
+
+            <div class="section-title">
+
+                <span>Organisasi</span>
+
+                <h2>Organisasi pada Masa Pendudukan Jepang</h2>
+
+                <p>
+                    Jepang membentuk atau mendukung berbagai organisasi
+                    untuk mengatur dan memobilisasi masyarakat.
+                </p>
+
+            </div>
+
+
+            <div class="organization-grid">
+
+                <div class="organization">
+
+                    <div class="year">
+                        1943
+                    </div>
+
+                    <h3>
+                        Putera
+                    </h3>
+
+                    <p>
+                        Pusat Tenaga Rakyat. Organisasi ini dipimpin oleh
+                        empat tokoh yang dikenal sebagai Empat Serangkai:
+                        Soekarno, Mohammad Hatta, Ki Hajar Dewantara,
+                        dan K.H. Mas Mansyur.
+                    </p>
+
+                </div>
+
+
+                <div class="organization">
+
+                    <div class="year">
+                        1944
+                    </div>
+
+                    <h3>
+                        Jawa Hokokai
+                    </h3>
+
+                    <p>
+                        Himpunan Kebaktian Jawa yang digunakan untuk
+                        mengerahkan rakyat dalam mendukung kepentingan
+                        pemerintahan Jepang.
+                    </p>
+
+                </div>
+
+
+                <div class="organization">
+
+                    <div class="year">
+                        Masa Jepang
+                    </div>
+
+                    <h3>
+                        Seinendan
+                    </h3>
+
+                    <p>
+                        Organisasi barisan pemuda yang memberikan
+                        latihan dasar kemiliteran.
+                    </p>
+
+                </div>
+
+
+                <div class="organization">
+
+                    <div class="year">
+                        Masa Jepang
+                    </div>
+
+                    <h3>
+                        Keibodan
+                    </h3>
+
+                    <p>
+                        Organisasi pembantu polisi yang melibatkan
+                        masyarakat untuk membantu menjaga keamanan.
+                    </p>
+
+                </div>
+
+
+                <div class="organization">
+
+                    <div class="year">
+                        1943
+                    </div>
+
+                    <h3>
+                        PETA
+                    </h3>
+
+                    <p>
+                        Pembela Tanah Air. Organisasi militer yang
+                        anggotanya berasal dari penduduk Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="organization">
+
+                    <div class="year">
+                        1943
+                    </div>
+
+                    <h3>
+                        Heiho
+                    </h3>
+
+                    <p>
+                        Pasukan pembantu yang direkrut dari penduduk
+                        Indonesia untuk membantu tentara Jepang.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TOKOH
+        ====================================== -->
+
+        <section id="tokoh">
+
+            <div class="section-title">
+
+                <span>Tokoh Penting</span>
+
+                <h2>Tokoh dalam Perjalanan Kemerdekaan</h2>
+
+            </div>
+
+
+            <div class="people-grid">
+
+                <div class="person">
+
+                    <div class="avatar">
+                        SK
+                    </div>
+
+                    <h3>
+                        Soekarno
+                    </h3>
+
+                    <p>
+                        Tokoh Proklamasi dan Presiden pertama Republik Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        MH
+                    </div>
+
+                    <h3>
+                        Mohammad Hatta
+                    </h3>
+
+                    <p>
+                        Tokoh Proklamasi dan Wakil Presiden pertama Republik Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        AS
+                    </div>
+
+                    <h3>
+                        Ahmad Soebardjo
+                    </h3>
+
+                    <p>
+                        Tokoh yang berperan dalam perumusan dan penyusunan
+                        teks Proklamasi.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        SM
+                    </div>
+
+                    <h3>
+                        Sayuti Melik
+                    </h3>
+
+                    <p>
+                        Tokoh yang mengetik naskah Proklamasi.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        WS
+                    </div>
+
+                    <h3>
+                        Wikana
+                    </h3>
+
+                    <p>
+                        Salah satu tokoh golongan muda yang mendesak
+                        agar Proklamasi segera dilakukan.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        SU
+                    </div>
+
+                    <h3>
+                        Sukarni
+                    </h3>
+
+                    <p>
+                        Salah satu tokoh pemuda yang terlibat dalam
+                        rangkaian peristiwa menjelang Proklamasi.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        KD
+                    </div>
+
+                    <h3>
+                        Ki Hajar Dewantara
+                    </h3>
+
+                    <p>
+                        Tokoh nasional yang juga terlibat dalam
+                        organisasi Putera.
+                    </p>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="avatar">
+                        KM
+                    </div>
+
+                    <h3>
+                        K.H. Mas Mansyur
+                    </h3>
+
+                    <p>
+                        Salah satu tokoh Empat Serangkai dalam Putera.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PERSIAPAN KEMERDEKAAN
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Persiapan</span>
+
+                <h2>Persiapan Menuju Kemerdekaan</h2>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h3>
+                        BPUPKI
+                    </h3>
+
+                    <p>
+                        Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan
+                        Indonesia atau BPUPKI dibentuk oleh pemerintah Jepang
+                        pada 1945.
+                    </p>
+
+                    <h4>
+                        Peran BPUPKI
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Membahas dasar negara.
+                        </li>
+
+                        <li>
+                            Membahas rancangan Undang-Undang Dasar.
+                        </li>
+
+                        <li>
+                            Membahas berbagai hal yang berkaitan dengan
+                            persiapan negara Indonesia.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>
+                        PPKI
+                    </h3>
+
+                    <p>
+                        Panitia Persiapan Kemerdekaan Indonesia atau PPKI
+                        melanjutkan proses persiapan pembentukan negara
+                        Indonesia.
+                    </p>
+
+                    <h4>
+                        Peran PPKI setelah Proklamasi
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Mengesahkan UUD 1945.
+                        </li>
+
+                        <li>
+                            Memilih Presiden dan Wakil Presiden.
+                        </li>
+
+                        <li>
+                            Membentuk lembaga dan perangkat pemerintahan awal.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TIMELINE MENJELANG PROKLAMASI
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Rangkaian Peristiwa</span>
+
+                <h2>Menjelang Proklamasi Kemerdekaan</h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            6 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Bom Atom Hiroshima
+                        </h3>
+
+                        <p>
+                            Amerika Serikat menjatuhkan bom atom di Hiroshima.
+                            Peristiwa ini menjadi salah satu faktor yang
+                            memperlemah posisi Jepang dalam Perang Dunia II.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            9 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Bom Atom Nagasaki
+                        </h3>
+
+                        <p>
+                            Bom atom kedua dijatuhkan di Nagasaki.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            15 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Jepang Menyerah
+                        </h3>
+
+                        <p>
+                            Jepang menyatakan menyerah kepada Sekutu.
+                            Berita tersebut kemudian diketahui oleh para
+                            pemimpin Indonesia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            16 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Rengasdengklok
+                        </h3>
+
+                        <p>
+                            Golongan muda membawa Soekarno dan Mohammad Hatta
+                            ke Rengasdengklok untuk mendesak agar Proklamasi
+                            segera dilaksanakan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            Malam 16 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Penyusunan Teks Proklamasi
+                        </h3>
+
+                        <p>
+                            Setelah kembali ke Jakarta, teks Proklamasi
+                            dirumuskan di rumah Laksamana Tadashi Maeda.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            17 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Proklamasi Kemerdekaan
+                        </h3>
+
+                        <p>
+                            Soekarno membacakan Proklamasi Kemerdekaan
+                            Indonesia di Jalan Pegangsaan Timur No. 56,
+                            Jakarta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RENGASDENGKLOK
+        ====================================== -->
+
+        <section>
+
+            <div class="highlight">
+
+                <h2>
+                    🚗 Peristiwa Rengasdengklok
+                </h2>
+
+                <p>
+                    Rengasdengklok menjadi salah satu peristiwa penting
+                    sebelum Proklamasi Kemerdekaan Indonesia.
+                </p>
+
+
+                <div class="highlight-grid">
+
+                    <div class="highlight-box">
+
+                        <h3>
+                            📅 Kapan?
+                        </h3>
+
+                        <p>
+                            16 Agustus 1945
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-box">
+
+                        <h3>
+                            📍 Di mana?
+                        </h3>
+
+                        <p>
+                            Rengasdengklok, Karawang, Jawa Barat
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-box">
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mendesak agar Proklamasi segera dilakukan
+                            tanpa menunggu keputusan Jepang.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div style="margin-top:25px;">
+
+                    <h3>
+                        Tokoh yang terlibat
+                    </h3>
+
+                    <p>
+                        Soekarno, Mohammad Hatta, Wikana, Sukarni,
+                        dan tokoh-tokoh pemuda lainnya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PROKLAMASI
+        ====================================== -->
+
+        <section id="proklamasi">
+
+            <div class="section-title">
+
+                <span>Bagian B</span>
+
+                <h2>Proklamasi Kemerdekaan Indonesia</h2>
+
+            </div>
+
+
+            <div class="proklamasi">
+
+                <h2>
+                    🇮🇩 Hari Kemerdekaan Indonesia
+                </h2>
+
+                <div class="date">
+                    17 AGUSTUS 1945
+                </div>
+
+                <p>
+                    Pada hari Jumat, 17 Agustus 1945, Proklamasi Kemerdekaan
+                    Indonesia dibacakan oleh Soekarno didampingi Mohammad Hatta.
+                </p>
+
+
+                <div class="quote-box">
+
+                    <h3>
+                        📍 Tempat Pembacaan
+                    </h3>
+
+                    <p>
+                        Jalan Pegangsaan Timur No. 56, Jakarta.
+                    </p>
+
+                    <br>
+
+                    <h3>
+                        👥 Tokoh Utama
+                    </h3>
+
+                    <p>
+                        Soekarno dan Mohammad Hatta.
+                    </p>
+
+                    <br>
+
+                    <h3>
+                        🇮🇩 Makna
+                    </h3>
+
+                    <p>
+                        Proklamasi menjadi pernyataan kepada bangsa Indonesia
+                        dan dunia bahwa Indonesia telah menyatakan kemerdekaannya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             NASKAH PROKLAMASI
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Dokumen Bersejarah</span>
+
+                <h2>Naskah Proklamasi</h2>
+
+            </div>
+
+
+            <div class="document">
+
+                <h2>
+                    PROKLAMASI
+                </h2>
+
+                <div class="text">
+
+                    <p>
+                        Kami bangsa Indonesia dengan ini menjatakan
+                        kemerdekaan Indonesia.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Hal-hal jang mengenai pemindahan kekoeasaan d.l.l.,
+                        diselenggarakan dengan tjara seksama dan dalam tempo
+                        jang sesingkat-singkatnja.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Djakarta, 17-8-'05
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Atas nama bangsa Indonesia
+                    </p>
+
+                    <p>
+                        Soekarno/Hatta
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PEMBENTUKAN PEMERINTAHAN
+        ====================================== -->
+
+        <section id="pemerintahan">
+
+            <div class="section-title">
+
+                <span>Bagian C</span>
+
+                <h2>Pembentukan Pemerintahan Indonesia</h2>
+
+                <p>
+                    Setelah Proklamasi, Indonesia mulai membangun perangkat
+                    pemerintahan sebagai negara yang merdeka.
+                </p>
+
+            </div>
+
+
+            <div class="government-grid">
+
+                <div class="government">
+
+                    <div class="date">
+                        18 Agustus 1945
+                    </div>
+
+                    <h3>
+                        📜 Pengesahan UUD 1945
+                    </h3>
+
+                    <p>
+                        PPKI mengesahkan Undang-Undang Dasar 1945
+                        sebagai konstitusi negara Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="government">
+
+                    <div class="date">
+                        18 Agustus 1945
+                    </div>
+
+                    <h3>
+                        🇮🇩 Presiden dan Wakil Presiden
+                    </h3>
+
+                    <p>
+                        PPKI memilih Soekarno sebagai Presiden dan
+                        Mohammad Hatta sebagai Wakil Presiden Republik Indonesia.
+                    </p>
+
+                </div>
+
+
+                <div class="government">
+
+                    <div class="date">
+                        Agustus 1945
+                    </div>
+
+                    <h3>
+                        🏛️ Pembentukan Kementerian
+                    </h3>
+
+                    <p>
+                        Pemerintah mulai membentuk kementerian untuk
+                        menjalankan berbagai bidang pemerintahan.
+                    </p>
+
+                </div>
+
+
+                <div class="government">
+
+                    <div class="date">
+                        22 Agustus 1945
+                    </div>
+
+                    <h3>
+                        👥 Pembentukan KNIP
+                    </h3>
+
+                    <p>
+                        Komite Nasional Indonesia Pusat atau KNIP
+                        dibentuk sebagai badan yang membantu Presiden.
+                    </p>
+
+                </div>
+
+
+                <div class="government">
+
+                    <div class="date">
+                        Agustus 1945
+                    </div>
+
+                    <h3>
+                        🗺️ Pemerintahan Daerah
+                    </h3>
+
+                    <p>
+                        Indonesia dibagi menjadi beberapa provinsi dan
+                        mulai membentuk pemerintahan daerah.
+                    </p>
+
+                </div>
+
+
+                <div class="government">
+
+                    <div class="date">
+                        Agustus 1945
+                    </div>
+
+                    <h3>
+                        ⚖️ Perangkat Negara
+                    </h3>
+
+                    <p>
+                        Pemerintah mulai membangun berbagai perangkat
+                        untuk menjalankan negara yang baru merdeka.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PRESIDEN DAN WAKIL PRESIDEN
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Pemimpin Negara</span>
+
+                <h2>Presiden dan Wakil Presiden Pertama</h2>
+
+            </div>
+
+
+            <div class="president-box">
+
+                <div class="leader">
+
+                    <div class="initial">
+                        SK
+                    </div>
+
+                    <h3>
+                        Ir. Soekarno
+                    </h3>
+
+                    <p>
+                        Presiden Republik Indonesia
+                    </p>
+
+                    <p>
+                        Dipilih pada 18 Agustus 1945 oleh PPKI.
+                    </p>
+
+                </div>
+
+
+                <div class="leader">
+
+                    <div class="initial">
+                        MH
+                    </div>
+
+                    <h3>
+                        Drs. Mohammad Hatta
+                    </h3>
+
+                    <p>
+                        Wakil Presiden Republik Indonesia
+                    </p>
+
+                    <p>
+                        Dipilih pada 18 Agustus 1945 oleh PPKI.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             KEMENTERIAN
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Pemerintahan</span>
+
+                <h2>Pembentukan Kementerian</h2>
+
+                <p>
+                    Kementerian dibentuk untuk membantu Presiden menjalankan
+                    berbagai urusan pemerintahan.
+                </p>
+
+            </div>
+
+
+            <div class="ministry-grid">
+
+                <div class="ministry">
+                    <strong>1.</strong>
+                    Departemen Dalam Negeri
+                </div>
+
+                <div class="ministry">
+                    <strong>2.</strong>
+                    Departemen Luar Negeri
+                </div>
+
+                <div class="ministry">
+                    <strong>3.</strong>
+                    Departemen Kehakiman
+                </div>
+
+                <div class="ministry">
+                    <strong>4.</strong>
+                    Departemen Keuangan
+                </div>
+
+                <div class="ministry">
+                    <strong>5.</strong>
+                    Departemen Kemakmuran
+                </div>
+
+                <div class="ministry">
+                    <strong>6.</strong>
+                    Departemen Kesehatan
+                </div>
+
+                <div class="ministry">
+                    <strong>7.</strong>
+                    Departemen Pengajaran
+                </div>
+
+                <div class="ministry">
+                    <strong>8.</strong>
+                    Departemen Penerangan
+                </div>
+
+                <div class="ministry">
+                    <strong>9.</strong>
+                    Departemen Sosial
+                </div>
+
+                <div class="ministry">
+                    <strong>10.</strong>
+                    Departemen Perhubungan
+                </div>
+
+                <div class="ministry">
+                    <strong>11.</strong>
+                    Departemen Pekerjaan Umum
+                </div>
+
+                <div class="ministry">
+                    <strong>12.</strong>
+                    Departemen Pertahanan
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             KNIP
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Lembaga Negara</span>
+
+                <h2>KNIP</h2>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h3>
+                        Komite Nasional Indonesia Pusat
+                    </h3>
+
+                    <p>
+                        KNIP merupakan badan yang dibentuk setelah Proklamasi
+                        untuk membantu Presiden sebelum lembaga perwakilan
+                        berdasarkan pemilu terbentuk.
+                    </p>
+
+                    <h4>
+                        Pembentukan
+                    </h4>
+
+                    <p>
+                        KNIP dibentuk pada 22 Agustus 1945.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>
+                        Peran KNIP
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Membantu Presiden.
+                        </li>
+
+                        <li>
+                            Menjalankan fungsi perwakilan rakyat.
+                        </li>
+
+                        <li>
+                            Menjadi bagian dari proses pembentukan
+                            sistem pemerintahan awal Republik Indonesia.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PEMERINTAHAN DAERAH
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Wilayah Negara</span>
+
+                <h2>Pembentukan Pemerintahan Daerah</h2>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <p>
+                    Pada awal kemerdekaan, pemerintah Indonesia melakukan
+                    pembagian wilayah dan membentuk pemerintahan daerah.
+                    Langkah ini diperlukan agar pemerintahan Republik Indonesia
+                    dapat berjalan di berbagai wilayah.
+                </p>
+
+                <br>
+
+                <p>
+                    Pada sidang PPKI tanggal 19 Agustus 1945, Indonesia
+                    dibagi menjadi delapan provinsi.
+                </p>
+
+                <br>
+
+                <ul>
+
+                    <li>
+                        Sumatra
+                    </li>
+
+                    <li>
+                        Jawa Barat
+                    </li>
+
+                    <li>
+                        Jawa Tengah
+                    </li>
+
+                    <li>
+                        Jawa Timur
+                    </li>
+
+                    <li>
+                        Sunda Kecil
+                    </li>
+
+                    <li>
+                        Maluku
+                    </li>
+
+                    <li>
+                        Sulawesi
+                    </li>
+
+                    <li>
+                        Kalimantan
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FAKTA PENTING
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Fakta Sejarah</span>
+
+                <h2>Fakta-Fakta Penting</h2>
+
+            </div>
+
+
+            <div class="facts">
+
+                <div class="fact">
+
+                    <span>FAKTA 01</span>
+
+                    <p>
+                        Proklamasi Kemerdekaan Indonesia dibacakan pada
+                        17 Agustus 1945.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 02</span>
+
+                    <p>
+                        Pembacaan Proklamasi dilakukan di Jalan Pegangsaan
+                        Timur No. 56, Jakarta.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 03</span>
+
+                    <p>
+                        Soekarno membacakan Proklamasi didampingi
+                        Mohammad Hatta.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 04</span>
+
+                    <p>
+                        Sayuti Melik mengetik naskah Proklamasi setelah
+                        perumusan naskah dilakukan.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 05</span>
+
+                    <p>
+                        Rengasdengklok merupakan salah satu peristiwa penting
+                        yang terjadi sehari sebelum Proklamasi.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 06</span>
+
+                    <p>
+                        UUD 1945 disahkan oleh PPKI pada 18 Agustus 1945.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 07</span>
+
+                    <p>
+                        Soekarno dan Mohammad Hatta dipilih sebagai Presiden
+                        dan Wakil Presiden pada 18 Agustus 1945.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <span>FAKTA 08</span>
+
+                    <p>
+                        KNIP dibentuk sebagai bagian dari perangkat
+                        pemerintahan awal Republik Indonesia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TIMELINE UTAMA
+        ====================================== -->
+
+        <section>
+
+            <div class="section-title">
+
+                <span>Timeline Utama</span>
+
+                <h2>1942 – 1945</h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            8 Maret 1942
+                        </div>
+
+                        <h3>
+                            Kapitulasi Kalijati
+                        </h3>
+
+                        <p>
+                            Belanda menyerah kepada Jepang di Kalijati,
+                            Subang, Jawa Barat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            1942–1945
+                        </div>
+
+                        <h3>
+                            Pendudukan Jepang
+                        </h3>
+
+                        <p>
+                            Jepang menjalankan pemerintahan militer di
+                            wilayah Indonesia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            1943
+                        </div>
+
+                        <h3>
+                            Putera dan PETA
+                        </h3>
+
+                        <p>
+                            Berbagai organisasi dibentuk atau dikembangkan
+                            untuk mendukung kepentingan Jepang.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            1945
+                        </div>
+
+                        <h3>
+                            BPUPKI dan PPKI
+                        </h3>
+
+                        <p>
+                            Persiapan pembentukan negara Indonesia
+                            semakin berkembang.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            15 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Jepang Menyerah
+                        </h3>
+
+                        <p>
+                            Jepang menyerah kepada Sekutu setelah mengalami
+                            kekalahan dalam Perang Dunia II.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            16 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Rengasdengklok
+                        </h3>
+
+                        <p>
+                            Soekarno dan Mohammad Hatta dibawa ke
+                            Rengasdengklok oleh golongan muda.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            Malam 16 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Perumusan Proklamasi
+                        </h3>
+
+                        <p>
+                            Perumusan teks Proklamasi dilakukan di rumah
+                            Laksamana Tadashi Maeda di Jakarta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            17 Agustus 1945
+                        </div>
+
+                        <h3>
+                            🇮🇩 Proklamasi
+                        </h3>
+
+                        <p>
+                            Indonesia memproklamasikan kemerdekaannya.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            18 Agustus 1945
+                        </div>
+
+                        <h3>
+                            UUD 1945 dan Presiden
+                        </h3>
+
+                        <p>
+                            UUD 1945 disahkan dan Soekarno-Hatta dipilih
+                            sebagai Presiden dan Wakil Presiden.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            19 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Pembagian Provinsi
+                        </h3>
+
+                        <p>
+                            PPKI membagi wilayah Indonesia menjadi
+                            delapan provinsi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <div class="date">
+                            22 Agustus 1945
+                        </div>
+
+                        <h3>
+                            Pembentukan KNIP
+                        </h3>
+
+                        <p>
+                            KNIP dibentuk sebagai bagian dari pemerintahan
+                            awal Republik Indonesia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             KESIMPULAN
+        ====================================== -->
+
+        <section id="kesimpulan">
+
+            <div class="section-title">
+
+                <span>Penutup</span>
+
+                <h2>Kesimpulan</h2>
+
+            </div>
+
+
+            <div class="conclusion">
+
+                <h2>
+                    🇮🇩 Dari Pendudukan Menuju Kemerdekaan
+                </h2>
+
+                <p>
+                    Perjalanan Indonesia menuju kemerdekaan merupakan proses
+                    yang panjang dan melibatkan banyak tokoh serta peristiwa.
+                    Masa pendudukan Jepang membawa berbagai penderitaan bagi
+                    rakyat Indonesia, tetapi pada masa tersebut juga terdapat
+                    pengalaman organisasi dan kemiliteran yang kemudian dapat
+                    dimanfaatkan oleh bangsa Indonesia.
+                </p>
+
+                <br>
+
+                <p>
+                    Kekalahan Jepang pada Agustus 1945 menciptakan kesempatan
+                    bagi bangsa Indonesia untuk menentukan masa depannya sendiri.
+                    Perbedaan pandangan antara golongan muda dan golongan tua
+                    kemudian terlihat dalam peristiwa Rengasdengklok.
+                </p>
+
+                <br>
+
+                <p>
+                    Setelah melalui proses perumusan teks Proklamasi,
+                    Indonesia akhirnya memproklamasikan kemerdekaan pada
+                    17 Agustus 1945.
+                </p>
+
+                <br>
+
+                <p>
+                    Kemerdekaan kemudian dilanjutkan dengan pembentukan
+                    pemerintahan. PPKI mengesahkan UUD 1945, memilih Presiden
+                    dan Wakil Presiden, membentuk kementerian, serta memulai
+                    pembentukan pemerintahan daerah dan lembaga negara.
+                </p>
+
+                <br>
+
+                <p>
+                    Dengan demikian, Proklamasi bukanlah akhir dari perjuangan,
+                    melainkan awal dari perjalanan Indonesia sebagai negara
+                    yang merdeka dan berdaulat.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             IDENTITAS PEMBUAT
+        ====================================== -->
+
+        <div class="identity">
+
+            <h2>
+                👨‍💻 Identitas Pembuat
+            </h2>
+
+            <table>
+
+                <tr>
+                    <td>
+                        Nama
+                    </td>
+
+                    <td>
+                        Santiago Tan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sekolah
+                    </td>
+
+                    <td>
+                        SMK Bagimu Negeriku Semarang
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Jurusan
+                    </td>
+
+                    <td>
+                        Rekayasa Perangkat Lunak (RPL)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Kelas
+                    </td>
+
+                    <td>
+                        X RPL
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Mata Pelajaran
+                    </td>
+
+                    <td>
+                        Sejarah
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Jenis Proyek
+                    </td>
+
+                    <td>
+                        Infografis Digital
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Teknologi
+                    </td>
+
+                    <td>
+                        HTML & CSS
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <h3>
+            PERJALANAN INDONESIA MENUJU KEMERDEKAAN
+        </h3>
+
+        <p>
+            Projek ASTS Sejarah — Infografis Digital
+        </p>
+
+        <p>
+            Dibuat dengan HTML & CSS
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 Santiago Tan
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
